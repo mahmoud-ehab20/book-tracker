@@ -1,30 +1,68 @@
-# book-tracker
-📚 A Book Tracker App built with Next.js and Supabase. Users can sign up, log in, and manage their personal reading list securely.
+# 📚 Book Tracker
+
+A full-stack web app for managing your personal reading list. Users can sign up, log in, and securely manage their own book collection.
+
+🔗 **[Live Demo](https://book-tracker-sqln.vercel.app/)**
 
 
-🚀 Features
+## 🚀 Features
 
-✅ User Authentication — Secure email/password login using Supabase Auth
+- ✅ **User Authentication** — Email/password sign up and login with Supabase Auth
+- ✅ **Personalized Dashboard** — Each user sees only their own books
+- ✅ **Book Management** — Add, view, and delete books
+- ✅ **REST API Routes** — Next.js API routes with JWT verification for authenticated requests
+- ✅ **Responsive UI** — Clean layout that works on desktop and mobile
+- ✅ **Deployed on Vercel** — Serverless hosting
 
-✅ Personalized Dashboard — Each user sees only their own books
+## 🛠️ Tech Stack
 
-✅ Book Management — Add, view, and delete books
+| Layer | Technology |
+|-------|------------|
+| Frontend | Next.js (App Router), React, TypeScript |
+| Backend | Next.js API routes |
+| Auth & Database | Supabase Auth, PostgreSQL |
+| Deployment | Vercel |
 
-✅ RESTful API Routes — Backend routes with JWT verification
+## ⚙️ Getting Started
 
-✅ Responsive UI — Clean and mobile-friendly
+### Prerequisites
 
-✅ Deployed on Vercel — Fast and serverless
+- Node.js 18 or later
+- A free [Supabase](https://supabase.com) project
 
+### Installation
 
+1. Clone the repository
 
+   ```bash
+   git clone https://github.com/mahmoud-ehab20/book-tracker.git
+   cd book-tracker
+   ```
 
-🛠️ Tech Stack
+2. Install dependencies
 
-Frontend: Next.js (React, App Router)
+   ```bash
+   npm install
+   ```
 
-Backend: Supabase (Auth + Postgres Database)
+3. Create a `.env.local` file in the project root
 
-Deployment: Vercel
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-Language: TypeScript / JavaScript
+4. Run the development server
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000)
+
+## 👨‍💻 Author
+
+**Mahmoud Ehab** — Software Engineering Graduate
+
+- [LinkedIn](https://www.linkedin.com/in/mahmoud-ehab-hamada/)
+- [Portfolio](https://mahmoud-ehab-portfolio.vercel.app/)
